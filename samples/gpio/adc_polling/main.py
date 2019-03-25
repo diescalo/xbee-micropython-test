@@ -15,17 +15,17 @@
 from machine import ADC
 import time
 
-# Pin D1 (DIO1/AD1)
-ANALOG_PIN_ID = "D1"
+# Pin D3 (AD3/DIO3)
+ADC_PIN_ID = "D3"
 
 
 def main():
     print(" +-------------------------------------+")
-    print(" | XBee MicroPython Analog Read Sample |")
+    print(" | XBee MicroPython ADC Polling Sample |")
     print(" +-------------------------------------+\n")
 
-    # Create an ADC object for pin AD1.
-    adc_pin = ADC(ANALOG_PIN_ID)
+    # Create an ADC object for pin DIO0/AD0.
+    adc_pin = ADC(ADC_PIN_ID)
 
     # Start reading the analog voltage value present at the pin.
     while True:

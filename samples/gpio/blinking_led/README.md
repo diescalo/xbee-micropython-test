@@ -12,7 +12,7 @@ Demo requirements
 To run this example you need:
 
 * One XBee3 radio module with MicroPython support.
-* One carrier board for the radio module (XBIB or XBee Grove Development Board)
+* One carrier board for the radio module (XBIB-U-DEV or XBIB-C board).
 
 Demo setup
 ----------
@@ -28,12 +28,14 @@ Demo run
 The example is already configured, so all you need to do is build and launch
 the project.
 
-Verify the LED corresponding to the configured pin in the carrier board starts
-blinking (toggles its status every second). Every time the LED toggles, the
-application indicates it through the REPL console:
+Verify the LED corresponding to the configured pin (ON/SLEEP/DIO9) in the
+carrier board starts blinking (toggles its status every second). Every time
+the LED toggles, the application indicates it through the XBee REPL console::
 
- - Turn on LED
- - Turn off LED
+    - LED ON
+    - LED OFF
+    - LED ON
+    - LED OFF
 
 Compatible with
 ---------------

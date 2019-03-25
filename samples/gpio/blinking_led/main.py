@@ -15,8 +15,8 @@
 from machine import Pin
 import time
 
-# Pin D4 (DIO4/SPI_MOSI)
-LED_PIN_ID = "D4"
+# Pin D9 (ON/SLEEP/DIO9)
+LED_PIN_ID = "D9"
 
 
 def main():
@@ -30,11 +30,11 @@ def main():
 
     # Start blinking the LED by toggling its value every second.
     while True:
-        print("- Turn Off LED")
+        print("- LED OFF")
         led_pin.value(0)
         time.sleep(1)
 
-        print("- Turn on LED")
+        print("- LED ON")
         led_pin.value(1)
         time.sleep(1)
 

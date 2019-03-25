@@ -15,7 +15,7 @@
 from machine import Pin
 import time
 
-# Pin D4 (DIO3/AD3)
+# Pin D3 (AD3/DIO3)
 INPUT_PIN_ID = "D3"
 
 
