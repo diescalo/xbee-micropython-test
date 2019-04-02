@@ -15,8 +15,8 @@
 from machine import Pin
 import time
 
-# Pin D3 (AD3/DIO3)
-INPUT_PIN_ID = "D3"
+# Pin D0 (AD0/DIO0)
+INPUT_PIN_ID = "D0"
 
 
 def main():
@@ -25,8 +25,8 @@ def main():
     print(" +--------------------------------------------+\n")
 
     # Set up the LED pin object to check the input value. Configure the pin
-    # as input.
-    input_pin = Pin(INPUT_PIN_ID, Pin.IN)
+    # as input and enable the internal pull-up.
+    input_pin = Pin(INPUT_PIN_ID, Pin.IN, Pin.PULL_UP)
 
     # Start polling the value of the pin every second.
     while True:

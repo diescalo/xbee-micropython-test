@@ -22,25 +22,6 @@ Make sure the hardware is set up correctly:
 
 1. Plug the XBee3 radio module into the XBee adapter and connect it to your
    computer's USB port.
-2. Configure the IO line corresponding to the button in the example. Depending
-   on the carrier board you are using you may need to change the value of the
-   ``INPUT_PIN_ID`` variable:
-
-   * XBIB-U-DEV board:
-
-     * The example is already configured to use this carrier board. The input
-       pin configured is ``D3`` (AD3/DIO3), which corresponds to the SW5 user
-       button of the board. No further changes are necessary.
-
-   * XBIB-C board:
-
-     * If you are using the XBIB-C, update the ``INPUT_PIN_ID`` variable to
-       ``D0`` (AD0/DIO0), which corresponds to the Comm DIO0 user button of the
-       board.
-
-   **NOTE**: It is recommended to verify the capabilities of the pins used in
-   the example as well as the electrical characteristics in the product manual
-   of your XBee Device to ensure that everything is configured correctly.
 
 Demo run
 --------
@@ -48,7 +29,9 @@ Demo run
 The example is already configured, so all you need to do is build and launch
 the project. To test the functionality, follow these steps:
 
-1. Press the button corresponding to the digital input line.
+1. Press the button corresponding to the digital input line. Byt default the 
+   button configured corresponds to **SW2** in XBIB-U-DEV carrier boards and
+   **Comm DIO0** in XBIB-C carrier boards.
 2. Verify the value displayed in the XBee REPL console changes from 1 to 0 when
    the button is pressed::
 
