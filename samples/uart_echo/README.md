@@ -57,8 +57,8 @@ While it is running, type some data in the serial console terminal you
 configured previously. You should see the echo from the XBee module
 corresponding to the data you have written.
 
-Compatible with
----------------
+Supported platforms
+-------------------
 
 * Digi XBee3 Cellular LTE-M/NB-IoT
 * Digi XBee3 Cellular LTE CAT 1

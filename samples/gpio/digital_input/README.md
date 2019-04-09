@@ -40,8 +40,8 @@ the project. To test the functionality, follow these steps:
        - Digital input value: 0
        - Digital input value: 1
 
-Compatible with
----------------
+Supported platforms
+-------------------
 
 * Digi XBee3 Zigbee 3
 * Digi XBee3 802.15.4

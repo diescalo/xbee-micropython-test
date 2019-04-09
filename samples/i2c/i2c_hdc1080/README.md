@@ -64,8 +64,8 @@ the HDC1080 every 5 seconds. Verify that the XBee REPL console display them::
     - Temperature: 24.55C
     - Humidity: 32.62%
 
-Compatible with
----------------
+Supported platforms
+-------------------
 
 * Digi XBee3 Zigbee 3
 * Digi XBee3 802.15.4

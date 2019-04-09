@@ -80,8 +80,8 @@ To test the functionality, follow these steps:
        - ADC value: 4095
        - ADC value: 2
 
-Compatible with
----------------
+Supported platforms
+-------------------
 
 * Digi XBee3 Zigbee 3
 * Digi XBee3 802.15.4

@@ -58,8 +58,8 @@ launch the application. Follow these steps to test the sample:
    turning on gradually from the bottom to the top and then turning off from
    the top to the bottom. 
 
-Compatible with
----------------
+Supported platforms
+-------------------
 
 * Digi XBee3 Zigbee 3
 * Digi XBee3 802.15.4

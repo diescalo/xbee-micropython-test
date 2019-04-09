@@ -65,8 +65,8 @@ device connected to your XBee module::
 
     - I2C device found at address: 0x40
 
-Compatible with
----------------
+Supported platforms
+-------------------
 
 * Digi XBee3 Zigbee 3
 * Digi XBee3 802.15.4
