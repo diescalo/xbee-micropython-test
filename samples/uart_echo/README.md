@@ -60,8 +60,8 @@ corresponding to the data you have written.
 Supported platforms
 -------------------
 
-* Digi XBee3 Cellular LTE-M/NB-IoT
-* Digi XBee3 Cellular LTE CAT 1
+* Digi XBee3 Cellular LTE-M/NB-IoT - minimum firmware version: 11410
+* Digi XBee3 Cellular LTE CAT 1 - minimum firmware version: 31010
 
 License
 -------
