@@ -7,8 +7,8 @@ of how to initialize an I/O pin to read analog values.
 The example configures an IO line of the XBee device as ADC. Then, it
 periodically reads its value and prints it.
 
-Demo requirements
------------------
+Requirements
+------------
 
 To run this example you need:
 
@@ -16,8 +16,8 @@ To run this example you need:
 * One carrier board for the radio module (XBIB-U-DEV or XBIB-C board).
 * One voltage variable peripheral (for example a potentiometer).
 
-Demo setup
-----------
+Setup
+-----
 
 Make sure the hardware is set up correctly:
 
@@ -64,8 +64,8 @@ Make sure the hardware is set up correctly:
    the example as well as the electrical characteristics in the product manual
    of your XBee Device to ensure that everything is configured correctly.
 
-Demo run
---------
+Run
+---
 
 The example is already configured, so all you need to do is build and launch
 the project.

@@ -4,8 +4,8 @@ I2C HDC1080 Sample Application
 This example demonstrates the usage of the I2C API by giving an example of how
 to read the temperature and humidity values from the HDC1080 I2C sensor.
 
-Demo requirements
------------------
+Requirements
+------------
 
 To run this example you need:
 
@@ -14,8 +14,8 @@ To run this example you need:
 * One standalone HDC1080 humidity and temperature sensor (not necessary if you
   are using an XBIB-C carrier board).
 
-Demo setup
-----------
+Setup
+-----
 
 Make sure the hardware is set up correctly:
 
@@ -49,8 +49,8 @@ Make sure the hardware is set up correctly:
    the example as well as the electrical characteristics in the product manual
    of your XBee Device to ensure that everything is configured correctly.
 
-Demo run
---------
+Run
+---
 
 The example is already configured, so all you need to do is build and launch
 the project.

@@ -7,24 +7,24 @@ of how to check the present value on a pin set up to be in input mode.
 The example uses the polling technique to monitor the value of the pin
 associated to a button of the XBee carrier board.
 
-Demo requirements
------------------
+Requirements
+------------
 
 To run this example you need:
 
 * One XBee3 radio module with MicroPython support.
 * One carrier board for the radio module (XBIB-U-DEV or XBIB-C board).
 
-Demo setup
-----------
+Setup
+-----
 
 Make sure the hardware is set up correctly:
 
 1. Plug the XBee3 radio module into the XBee adapter and connect it to your
    computer's USB port.
 
-Demo run
---------
+Run
+---
 
 The example is already configured, so all you need to do is build and launch
 the project. To test the functionality, follow these steps:

@@ -7,8 +7,8 @@ it back.
 
 The example sends out to the serial port an echo of the received data.
 
-Demo requirements
------------------
+Requirements
+------------
 
 To run this example you need:
 
@@ -17,8 +17,8 @@ To run this example you need:
 * One carrier board for the radio module (XBIB-U-DEV or XBIB-C board).
 * A serial terminal application installed in your computer.
 
-Demo setup
-----------
+Setup
+-----
 
 Make sure the hardware is set up correctly:
 
@@ -47,8 +47,8 @@ Make sure the hardware is set up correctly:
    The baud rate of the serial console must be **9600**, as the sample will
    configure the UART of the XBee module with that baud rate.
 
-Demo run
---------
+Run
+---
 
 The example is already configured, so all you need to do is build and launch
 the project.

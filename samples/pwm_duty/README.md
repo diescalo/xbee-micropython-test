@@ -8,8 +8,8 @@ The example waits for a button press to start the duty cycle sequence. This
 sequence increases gradually the value of the duty cycle to its maximum and
 then decreases it gradually to its minimum.
 
-Demo requirements
------------------
+Requirements
+------------
 
 To run this example you need:
 
@@ -17,8 +17,8 @@ To run this example you need:
 * One carrier board for the radio module (XBIB-U-DEV or XBIB-C board).
 * One PWM peripheral (RGB LED, buzzer, DC servo, etc.)
 
-Demo setup
-----------
+Setup
+-----
 
 Make sure the hardware is set up correctly:
 
@@ -43,8 +43,8 @@ Make sure the hardware is set up correctly:
    the example as well as the electrical characteristics in the product manual
    of your XBee Device to ensure that everything is configured correctly.
 
-Demo run
---------
+Run
+---
 
 The example is already configured, so all you need to do is to compile and 
 launch the application. Follow these steps to test the sample:
