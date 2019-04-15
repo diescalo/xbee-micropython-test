@@ -33,7 +33,7 @@ Make sure the hardware is set up correctly:
        functionality provided by the board.
      * Connect the I2C device to VCC, to the pins configured as SDA and SCL
        and to GND. See the following table for more information about the pins
-       layout::
+       layout:
 
            +--------+------------+----------+-----------+-----------+
            | Signal | Pin ID     | Pin # TH | Pin # SMT | Pin # MMT |
@@ -55,13 +55,13 @@ Make sure the hardware is set up correctly:
 Run
 ---
 
-The example is already configured, so all you need to do is build and launch
-the project.
+The example is already configured, so all you need to do is to compile and
+launch the application.
 
 The application performs a discovery of I2C devices connected to the I2C
 interface of the XBee device. Once an I2C device is found, it displays its
 address. Verify that the XBee REPL console displays the address of the I2C
-device connected to your XBee module::
+device connected to your XBee module:
 
     - I2C device found at address: 0x40
 

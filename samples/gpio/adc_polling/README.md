@@ -30,7 +30,7 @@ Make sure the hardware is set up correctly:
      * Isolate the pin configured as ADC so it does not use the functionality
        provided by the board.
      * Connect the potentiometer to VCC, to the pin configured as ADC and to
-       GND. Something similar to this::
+       GND. Something similar to this:
 
             O   VCC
             |
@@ -51,13 +51,13 @@ Make sure the hardware is set up correctly:
        * XBIB-U-DEV board:
 
          * The example is already configured to use this carrier board. The
-           ADC pin configured is ``D3`` (AD3/DIO3), which corresponds to the
+           ADC pin configured is `D3` (AD3/DIO3), which corresponds to the
            SW5 user button of the board. No further changes are necessary.
 
        * XBIB-C board:
 
-         * If you are using the XBIB-C, update the ``ADC_PIN_ID`` variable to
-           ``D0`` (AD0/DIO0), which corresponds to the Comm DIO0 user button of
+         * If you are using the XBIB-C, update the `ADC_PIN_ID` variable to
+           `D0` (AD0/DIO0), which corresponds to the Comm DIO0 user button of
            the board.
 
    **NOTE**: It is recommended to verify the capabilities of the pins used in
@@ -67,14 +67,14 @@ Make sure the hardware is set up correctly:
 Run
 ---
 
-The example is already configured, so all you need to do is build and launch
-the project.
+The example is already configured, so all you need to do is to compile and
+launch the application.
 
 To test the functionality, follow these steps:
 
 1. Rotate the potentiometer or press and release the corresponding user button
    in case you are not using a potentiometer.
-2. Verify that the value displayed in the XBee REPL console is changing::
+2. Verify that the value displayed in the XBee REPL console is changing:
 
        - ADC value: 4095
        - ADC value: 4095

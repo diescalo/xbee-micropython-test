@@ -24,20 +24,20 @@ Make sure the hardware is set up correctly:
 
 1. Plug the XBee3 radio module into the XBee adapter and connect it to your
    computer's USB port.
-2. Connect the PWM device to the ``RSSI PWM/DIO10`` pin of the XBee module. The
+2. Connect the PWM device to the `RSSI PWM/DIO10` pin of the XBee module. The
    way to connect it changes depending on the carrier board you have:
 
    * XBIB-U-DEV board:
 
-     * In XBIB-U-DEV boards the ``RSSI PWM/DIO10`` is already connected to the
+     * In XBIB-U-DEV boards the `RSSI PWM/DIO10` is already connected to the
        RSSI LEDs tower of the board. So, you don't need to connect anything in
        order to test the sample.
 
    * XBIB-C board:
 
-     * Isolate the ``RSSI PWM/DIO10`` pin so it does not use the
+     * Isolate the `RSSI PWM/DIO10` pin so it does not use the
        functionality provided by the board.
-     * Connect the PWM device to the ``RSSI PWM/DIO10`` pin and to GND.
+     * Connect the PWM device to the `RSSI PWM/DIO10` pin and to GND.
 
    **NOTE**: It is recommended to verify the capabilities of the pins used in
    the example as well as the electrical characteristics in the product manual
@@ -46,10 +46,10 @@ Make sure the hardware is set up correctly:
 Run
 ---
 
-The example is already configured, so all you need to do is to compile and 
+The example is already configured, so all you need to do is to compile and
 launch the application. Follow these steps to test the sample:
 
-1. Press the start button (**SW2** in XBIB-U-DEV carrier board or **Comm DIO0
+1. Press the start button (**SW2** in XBIB-U-DEV carrier board or **Comm DIO0**
    in XBIB-C carrier board) to start the duty cycle sequence. This sequence
    increases gradually the value of the duty cycle to its maximum and then
    decreases it gradually to its minimum.

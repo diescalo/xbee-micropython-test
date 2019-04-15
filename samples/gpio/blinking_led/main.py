@@ -19,25 +19,20 @@ import time
 LED_PIN_ID = "D9"
 
 
-def main():
-    print(" +--------------------------------------+")
-    print(" | XBee MicroPython Blinking LED Sample |")
-    print(" +--------------------------------------+\n")
+print(" +--------------------------------------+")
+print(" | XBee MicroPython Blinking LED Sample |")
+print(" +--------------------------------------+\n")
 
-    # Set up the LED pin object to manage the LED status. Configure the pin
-    # as output and set its initial value to off (0).
-    led_pin = Pin(LED_PIN_ID, Pin.OUT, value=0)
+# Set up the LED pin object to manage the LED status. Configure the pin
+# as output and set its initial value to off (0).
+led_pin = Pin(LED_PIN_ID, Pin.OUT, value=0)
 
-    # Start blinking the LED by toggling its value every second.
-    while True:
-        print("- LED OFF")
-        led_pin.value(0)
-        time.sleep(1)
+# Start blinking the LED by toggling its value every second.
+while True:
+    print("- LED OFF")
+    led_pin.value(0)
+    time.sleep(1)
 
-        print("- LED ON")
-        led_pin.value(1)
-        time.sleep(1)
-
-
-if __name__ == '__main__':
-    main()
+    print("- LED ON")
+    led_pin.value(1)
+    time.sleep(1)

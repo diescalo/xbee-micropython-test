@@ -30,7 +30,7 @@ Make sure the hardware is set up correctly:
        functionality provided by the board.
      * Connect the HDC1080 device to VCC, to the pins configured as SDA and SCL
        and to GND. See the following table for more information about the pins
-       layout::
+       layout:
 
            +--------+------------+----------+-----------+-----------+
            | Signal | Pin ID     | Pin # TH | Pin # SMT | Pin # MMT |
@@ -52,16 +52,16 @@ Make sure the hardware is set up correctly:
 Run
 ---
 
-The example is already configured, so all you need to do is build and launch
-the project.
+The example is already configured, so all you need to do is to compile and
+launch the application.
 
 The application reads and displays the value of temperature and humidity from
-the HDC1080 every 5 seconds. Verify that the XBee REPL console display them::
+the HDC1080 every 5 seconds. Verify that the XBee REPL console display them:
 
-    - Temperature: 24.5C
+    - Temperature: 24.5 °C
     - Humidity: 29.44%
 
-    - Temperature: 24.55C
+    - Temperature: 24.55 °C
     - Humidity: 32.62%
 
 Supported platforms

@@ -26,14 +26,14 @@ Make sure the hardware is set up correctly:
 Run
 ---
 
-The example is already configured, so all you need to do is build and launch
-the project. To test the functionality, follow these steps:
+The example is already configured, so all you need to do is to compile and
+launch the application. To test the functionality, follow these steps:
 
 1. Press the button corresponding to the digital input line. Byt default the 
    button configured corresponds to **SW2** in XBIB-U-DEV carrier boards and
    **Comm DIO0** in XBIB-C carrier boards.
 2. Verify the value displayed in the XBee REPL console changes from 1 to 0 when
-   the button is pressed::
+   the button is pressed:
 
        - Digital input value: 1
        - Digital input value: 1

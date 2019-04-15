@@ -16,21 +16,16 @@ from machine import UART
 import time
 
 
-def main():
-    print(" +-----------------------------------+")
-    print(" | XBee MicroPython UART Echo Sample |")
-    print(" +-----------------------------------+\n")
+print(" +-----------------------------------+")
+print(" | XBee MicroPython UART Echo Sample |")
+print(" +-----------------------------------+\n")
 
-    # Instantiate a UART object with a baudrate of 9600.
-    uart = UART(1, 9600)
+# Instantiate a UART object with a baudrate of 9600.
+uart = UART(1, 9600)
 
-    # Start echoing the read data.
-    while True:
-        if uart.any() > 0:
-            read_text = uart.read(uart.any())
-            uart.write(bytearray(read_text))
-        time.sleep(0.1)
-
-
-if __name__ == '__main__':
-    main()
+# Start echoing the read data.
+while True:
+    if uart.any() > 0:
+        read_text = uart.read(uart.any())
+        uart.write(bytearray(read_text))
+    time.sleep(0.1)

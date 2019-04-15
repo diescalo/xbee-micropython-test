@@ -19,20 +19,15 @@ import time
 INPUT_PIN_ID = "D0"
 
 
-def main():
-    print(" +--------------------------------------------+")
-    print(" | XBee MicroPython Digital Input Read Sample |")
-    print(" +--------------------------------------------+\n")
+print(" +--------------------------------------------+")
+print(" | XBee MicroPython Digital Input Read Sample |")
+print(" +--------------------------------------------+\n")
 
-    # Set up the LED pin object to check the input value. Configure the pin
-    # as input and enable the internal pull-up.
-    input_pin = Pin(INPUT_PIN_ID, Pin.IN, Pin.PULL_UP)
+# Set up the LED pin object to check the input value. Configure the pin
+# as input and enable the internal pull-up.
+input_pin = Pin(INPUT_PIN_ID, Pin.IN, Pin.PULL_UP)
 
-    # Start polling the value of the pin every second.
-    while True:
-        print("- Digital input value:", input_pin.value())
-        time.sleep(1)
-
-
-if __name__ == '__main__':
-    main()
+# Start polling the value of the pin every second.
+while True:
+    print("- Digital input value:", input_pin.value())
+    time.sleep(1)

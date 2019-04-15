@@ -15,18 +15,13 @@
 from machine import I2C
 
 
-def main():
-    print(" +-------------------------------------+")
-    print(" | XBee MicroPython I2C Scanner Sample |")
-    print(" +-------------------------------------+\n")
+print(" +-------------------------------------+")
+print(" | XBee MicroPython I2C Scanner Sample |")
+print(" +-------------------------------------+\n")
 
-    # Instantiate an I2C peripheral.
-    i2c = I2C(1)
+# Instantiate an I2C peripheral.
+i2c = I2C(1)
 
-    # Scan for I2C slaves connected to the interface and print their address.
-    for address in i2c.scan():
-        print("- I2C device found at address: %s" % hex(address))
-
-
-if __name__ == '__main__':
-    main()
+# Scan for I2C slaves connected to the interface and print their address.
+for address in i2c.scan():
+    print("- I2C device found at address: %s" % hex(address))

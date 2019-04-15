@@ -26,7 +26,7 @@ Make sure the hardware is set up correctly:
    computer's USB port.
 2. Connect the secondary UART interface of the XBee device to one serial port
    of your computer. See the following table for more information about the
-   secondary UART pins layout on the XBee modules::
+   secondary UART pins layout on the XBee modules:
 
            +--------+------------+----------+-----------+-----------+
            | Signal | Pin ID     | Pin # TH | Pin # SMT | Pin # MMT |
@@ -50,8 +50,8 @@ Make sure the hardware is set up correctly:
 Run
 ---
 
-The example is already configured, so all you need to do is build and launch
-the project.
+The example is already configured, so all you need to do is to compile and
+launch the application.
 
 While it is running, type some data in the serial console terminal you
 configured previously. You should see the echo from the XBee module

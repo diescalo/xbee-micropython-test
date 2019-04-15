@@ -19,19 +19,14 @@ import time
 ADC_PIN_ID = "D3"
 
 
-def main():
-    print(" +-------------------------------------+")
-    print(" | XBee MicroPython ADC Polling Sample |")
-    print(" +-------------------------------------+\n")
+print(" +-------------------------------------+")
+print(" | XBee MicroPython ADC Polling Sample |")
+print(" +-------------------------------------+\n")
 
-    # Create an ADC object for pin DIO0/AD0.
-    adc_pin = ADC(ADC_PIN_ID)
+# Create an ADC object for pin DIO0/AD0.
+adc_pin = ADC(ADC_PIN_ID)
 
-    # Start reading the analog voltage value present at the pin.
-    while True:
-        print("- ADC value:", adc_pin.read())
-        time.sleep(1)
-
-
-if __name__ == '__main__':
-    main()
+# Start reading the analog voltage value present at the pin.
+while True:
+    print("- ADC value:", adc_pin.read())
+    time.sleep(1)

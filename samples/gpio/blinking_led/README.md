@@ -25,12 +25,12 @@ Make sure the hardware is set up correctly:
 Run
 ---
 
-The example is already configured, so all you need to do is build and launch
-the project.
+The example is already configured, so all you need to do is to compile and
+launch the application.
 
-Verify the LED corresponding to the configured pin (ON/SLEEP/DIO9) in the
+Verify the LED corresponding to the configured pin (`ON/SLEEP/DIO9`) in the
 carrier board starts blinking (toggles its status every second). Every time
-the LED toggles, the application indicates it through the XBee REPL console::
+the LED toggles, the application indicates it through the XBee REPL console:
 
     - LED ON
     - LED OFF
