@@ -1,4 +1,4 @@
-ADC polling Sample Application
+ADC Polling Sample Application
 ==============================
 
 This example demonstrates the usage of the I/O pins API by giving an example

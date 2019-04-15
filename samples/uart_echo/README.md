@@ -1,5 +1,5 @@
-UART Echo
-=========
+UART Echo Sample Application
+============================
 
 This example demonstrates the usage of the UART API by giving an example of
 how to read data from the secondary serial port of the XBee module and write
