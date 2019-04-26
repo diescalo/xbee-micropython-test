@@ -58,11 +58,11 @@ launch the application.
 The application reads and displays the value of temperature and humidity from
 the HDC1080 every 5 seconds. Verify that the XBee REPL console display them:
 
-    - Temperature: 24.5 °C
-    - Humidity: 29.44%
+    - Temperature: 24.5 C
+    - Humidity: 29.44 %
 
-    - Temperature: 24.55 °C
-    - Humidity: 32.62%
+    - Temperature: 24.55 C
+    - Humidity: 32.62 %
 
 Supported platforms
 -------------------

@@ -47,7 +47,7 @@ with uio.open(LOG_FILE, mode="a") as log:
     while not stopped:
         temperature = xbee.atcmd("TP")
         # Write the current temperature in the log file.
-        dummy = log.write("Current temperature: %.1F °C (%.1F °F)\n" % (temperature, temperature * 9.0 / 5.0 + 32.0))
+        dummy = log.write("Current temperature: %.1F C (%.1F F)\n" % (temperature, temperature * 9.0 / 5.0 + 32.0))
         # Wait 1 second until the next reading.
         for x in range(10):
             if button.value() == 0:

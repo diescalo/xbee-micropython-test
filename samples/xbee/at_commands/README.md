@@ -34,7 +34,7 @@ and node identifier:
 
     Firmware version: 0x11410
     Hardware version: 0x4b44
-    The XBee is 71.6 ºF (22.0 ºC)
+    The XBee is 22.0 C (71.6 F)
     Configured node identifier: XBee3 module
 
 Supported platforms

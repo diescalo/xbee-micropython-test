@@ -37,11 +37,11 @@ launch the application. Follow these steps to test the sample:
 
        Displaying log...
 
-       Current temperature: 26.0 °C (78.8 °F)
-       Current temperature: 26.0 °C (78.8 °F)
-       Current temperature: 27.0 °C (80.6 °F)
-       Current temperature: 27.0 °C (80.6 °F)
-       Current temperature: 26.0 °C (78.8 °F)
+       Current temperature: 26.0 C (78.8 F)
+       Current temperature: 26.0 C (78.8 F)
+       Current temperature: 27.0 C (80.6 F)
+       Current temperature: 27.0 C (80.6 F)
+       Current temperature: 26.0 C (78.8 F)
 
        Log file read
 

@@ -56,8 +56,8 @@ while True:
     humidity_hr = (int.from_bytes(humidity_bytes, "big") / 2 ** 16) * 100
 
     # Print results:
-    print("- Temperature: %s °C" % round(temp_celsius, 2))
-    print("- Humidity: %s%%" % round(humidity_hr, 2))
+    print("- Temperature: %s C" % round(temp_celsius, 2))
+    print("- Humidity: %s %%" % round(humidity_hr, 2))
     print("")
 
     time.sleep(5)
