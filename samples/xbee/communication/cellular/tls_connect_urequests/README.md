@@ -36,7 +36,10 @@ The example is already configured, so all you need to do is to compile and
 launch the application. When executed, the application tries to connect with
 the **auth.pizza**. If the connection succeeds, it prints the JSON answer:
 
-    
+Required libraries
+--------------------
+
+* urequests
 
 Supported platforms
 -------------------

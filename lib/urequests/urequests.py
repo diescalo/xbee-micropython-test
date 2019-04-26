@@ -1,7 +1,6 @@
 """
 Based on micropython-urequests 0.6 from micropython-lib:
     https://github.com/micropython/micropython-lib/tree/master/urequests
-
 Copyright (c) 2013, 2014 micropython-lib contributors
 MIT License
 """
