@@ -12,22 +12,25 @@
 # ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
 # OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-from machine import Pin
+from hdc1080 import HDC1080
+from machine import I2C
 import time
 
-# Pin D0 (AD0/DIO0)
-INPUT_PIN_ID = "D0"
+print(" +---------------------------------------------+")
+print(" | XBee MicroPython I2C HDC1080 library Sample |")
+print(" +---------------------------------------------+\n")
 
+# Instantiate the HDC1080 peripheral.
+sensor = HDC1080(I2C(1))
 
-print(" +--------------------------------------------+")
-print(" | XBee MicroPython Digital Input Read Sample |")
-print(" +--------------------------------------------+\n")
-
-# Set up the button pin object to check the input value. Configure the pin
-# as input and enable the internal pull-up.
-input_pin = Pin(INPUT_PIN_ID, Pin.IN, Pin.PULL_UP)
-
-# Start polling the value of the pin every second.
+# Start reading temperature and humidity measures.
 while True:
-    print("- Digital input value:", input_pin.value())
-    time.sleep(1)
+    temp_celsius = sensor.read_temperature(True)
+    humidity_hr = sensor.read_humidity()
+
+    # Print results:
+    print("- Temperature: %s C" % round(temp_celsius, 2))
+    print("- Humidity: %s %%" % round(humidity_hr, 2))
+    print("")
+
+    time.sleep(5)

@@ -1,18 +1,21 @@
-Digital Input Read Sample Application
-=====================================
+FTP Client Sample Application
+=============================
 
-This example demonstrates the usage of the I/O pins API by giving an example
-of how to check the present value on a pin set up to be in input mode.
+This example demonstrates the usage of the 'uftp' library by giving an example
+of how to connect with an FTP server to download and upload files.
 
-The example uses the polling technique to monitor the value of the pin
-associated to a button of the XBee carrier board.
+The example waits until the module is connected to the cellular network. After
+that, it connects with a generic speed test FTP server, downloads the remote 
+file '1KB.zip' and uploads the local file '2b.txt' in the 'upload' folder of
+the FTP server. 
 
 Requirements
 ------------
 
 To run this example you need:
 
-* One XBee3 radio module with MicroPython support.
+* One XBee3 Cellular module with MicroPython support and a micro SIM card
+  inserted with Internet capabilities.
 * One carrier board for the radio module (XBIB-U-DEV or XBIB-C board).
 
 Setup
@@ -27,25 +30,32 @@ Run
 ---
 
 The example is already configured, so all you need to do is to compile and
-launch the application. To test the functionality, follow these steps:
+launch the application.
 
-1. Press the button corresponding to the digital input line. By default the 
-   button configured corresponds to **SW2** in XBIB-U-DEV carrier boards and
-   **Comm DIO0** in XBIB-C carrier boards.
-2. Verify the value displayed in the XBee REPL console changes from 1 to 0 when
-   the button is pressed:
+When the module has joined the cellular network, you should see the FTP
+operations that take place with the FTP server:
 
-       - Digital input value: 1
-       - Digital input value: 1
-       - Digital input value: 0
-       - Digital input value: 1
+    - Waiting for the module to be connected to the cellular network... [OK]
+    - Connecting to FTP server... [OK]
+    - Retrieving file '1KB.zip' (1024 bytes)... [OK]
+       * Time taken: 6 seconds
+    - Uploading file '2b.txt'... [OK]
+       * Time taken: 5 seconds
+    - Closing FTP connection... [OK]
+    - Done
+
+
+You can change the values of the FTP constants and file names to connect with
+a different FTP server and transfer other files.
+
+Required libraries
+--------------------
+
+* uftp
 
 Supported platforms
 -------------------
 
-* Digi XBee3 Zigbee 3 - minimum firmware version: 1006
-* Digi XBee3 802.15.4 - minimum firmware version: 2003
-* Digi XBee3 DigiMesh 2.4 - minimum firmware version: 3002
 * Digi XBee3 Cellular LTE-M/NB-IoT - minimum firmware version: 11410
 * Digi XBee3 Cellular LTE CAT 1 - minimum firmware version: 31010
 

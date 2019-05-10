@@ -1,18 +1,16 @@
-Digital Input Read Sample Application
-=====================================
+Connection Status Application
+=============================
 
-This example demonstrates the usage of the I/O pins API by giving an example
-of how to check the present value on a pin set up to be in input mode.
-
-The example uses the polling technique to monitor the value of the pin
-associated to a button of the XBee carrier board.
+This example demonstrates how to monitor the **AI** AT command to detect
+and report changes until the modem registered to the cellular network.
 
 Requirements
 ------------
 
 To run this example you need:
 
-* One XBee3 radio module with MicroPython support.
+* One XBee3 Cellular module with MicroPython support and a micro SIM card
+  inserted with SMS capabilities.
 * One carrier board for the radio module (XBIB-U-DEV or XBIB-C board).
 
 Setup
@@ -27,25 +25,28 @@ Run
 ---
 
 The example is already configured, so all you need to do is to compile and
-launch the application. To test the functionality, follow these steps:
+launch the application.
 
-1. Press the button corresponding to the digital input line. By default the 
-   button configured corresponds to **SW2** in XBIB-U-DEV carrier boards and
-   **Comm DIO0** in XBIB-C carrier boards.
-2. Verify the value displayed in the XBee REPL console changes from 1 to 0 when
-   the button is pressed:
+Once it is running, restart your module. The application will be executed
+again and it will display all the AI changes taking place until the module
+registers again to the cellular network: 
 
-       - Digital input value: 1
-       - Digital input value: 1
-       - Digital input value: 0
-       - Digital input value: 1
+    - AI Changed!
+       * New AI: 0xFF (MODEM_INITIALIZING)
+    - AI Changed!
+       * New AI: 0x22 (REGISTERING_TO_NETWORK)
+    - AI Changed!
+       * New AI: 0xFF (MODEM_INITIALIZING)
+    - AI Changed!
+       * New AI: 0x22 (REGISTERING_TO_NETWORK)
+    - AI Changed!
+       * New AI: 0x23 (CONNECTING_TO_INTERNET)
+    - AI Changed!
+       * New AI: 0x00 (CONNECTED)
 
 Supported platforms
 -------------------
 
-* Digi XBee3 Zigbee 3 - minimum firmware version: 1006
-* Digi XBee3 802.15.4 - minimum firmware version: 2003
-* Digi XBee3 DigiMesh 2.4 - minimum firmware version: 3002
 * Digi XBee3 Cellular LTE-M/NB-IoT - minimum firmware version: 11410
 * Digi XBee3 Cellular LTE CAT 1 - minimum firmware version: 31010
 
