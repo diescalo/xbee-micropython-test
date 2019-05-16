@@ -70,6 +70,9 @@ def extract_latitude(input_string):
     deg_decimal = input_string[min_start:min_end]
     latitude = (float(deg)) + ((float(deg_decimal)) / 60)
 
+    if find_me == "S":
+        latitude *= -1
+
     return latitude
 
 
@@ -100,6 +103,9 @@ def extract_longitude(input_string):
     min_end = index - 1
     deg_decimal = input_string[min_start:min_end]
     longitude = (float(deg)) + ((float(deg_decimal)) / 60)
+
+    if find_me == "W":
+        longitude *= -1
 
     return longitude
 
