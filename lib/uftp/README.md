@@ -1,4 +1,4 @@
-uftp library
+uftp Library
 ============
 
 FTP client library for MicroPython.

@@ -1,4 +1,4 @@
-remotemanager library
+remotemanager Library
 =====================
 
 MicroPython library to manage data streams and data points of a Digi Remote

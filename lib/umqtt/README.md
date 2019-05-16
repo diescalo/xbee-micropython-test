@@ -1,4 +1,4 @@
-umqtt library
+umqtt Library
 =================
 
 Simple MQTT client for MicroPython to publish/subscribe.

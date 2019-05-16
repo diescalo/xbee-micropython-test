@@ -1,4 +1,4 @@
-hdc1080 library
+hdc1080 Library
 ===============
 
 MicroPython library for I2C interface to Texas Instruments HDC1080 temperature

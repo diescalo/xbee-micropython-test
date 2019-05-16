@@ -1,4 +1,4 @@
-ds1621 library
+ds1621 Library
 ==============
 
 MicroPython library for I2C interface to Maxim DS1621 Digital Thermometer and

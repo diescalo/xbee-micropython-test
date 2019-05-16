@@ -1,4 +1,4 @@
-urequests library
+urequests Library
 =================
 
 MicroPython library that simplifies WEB page requests and answer handling.
